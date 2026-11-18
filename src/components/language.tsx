@@ -10,10 +10,10 @@ export function LanguageProvider({children}:{children:ReactNode}) {
   return <LanguageContext.Provider value={{language,setLanguage:change}}>{children}</LanguageContext.Provider>;
 }
 const english:Record<string,string>={
-  "전체":"All teams", "성인 N":"Adult N", "성인 W":"Adult W", "성인 S":"Adult S", "SHINE":"SHINE", "프로미스":"Promise", "EM 연합":"EM United", "YOUTH":"YOUTH",
+  "전체":"All teams", "성인":"Adults", "성인 N":"Adult N", "성인 W":"Adult W", "성인 S":"Adult S", "SHINE":"SHINE", "프로미스":"Promise", "EM 연합":"EM United", "YOUTH":"YOUTH",
   "성인 N 공동체":"Adult N Community", "성인 W 공동체":"Adult W Community", "성인 S 공동체":"Adult S Community", "대학청년부 SHINE":"Young Adults · SHINE", "대학청년부 프로미스":"Young Adults · Promise", "기타":"Other",
   "제주":"Jeju", "일본":"Japan", "제주/일본 러브소나타":"Jeju / Japan Love Sonata", "폴란드":"Poland", "콜롬비아":"Colombia", "튀니지":"Tunisia", "도미니카":"Dominican Republic",
-  "자리 확보":"Seat reserved", "참가 확정":"Confirmed", "대기 접수":"Waitlisted", "취소 완료":"Cancelled", "접수 종료":"Registration closed", "모집 준비 중":"Coming soon", "정원 마감":"Full", "마감 임박":"Filling fast", "모집 중":"Open",
+  "참가 확정":"Confirmed", "참가 확정":"Confirmed", "대기 접수":"Waitlisted", "취소 완료":"Cancelled", "접수 종료":"Registration closed", "모집 준비 중":"Coming soon", "정원 마감":"Full", "마감 임박":"Filling fast", "모집 중":"Open",
   "차희영 선교 MC · 949-773-6175":"차희영 · Mission Coordinator · 949-773-6175",
   "2027 여름 아웃리치 선착순 신청을 받습니다. 정원이 차면 동의하신 분에 한해 대기 접수됩니다.":"Registration for Summer Outreach 2027 is first come, first served. If a team is full, you may choose to join its waitlist.",
   "2027 여름 아웃리치 모집을 준비하고 있습니다. 신청 일정과 세부 안내는 추후 공지합니다.":"Summer Outreach 2027 registration is being prepared. Dates and details will be announced soon.",
