@@ -4,9 +4,9 @@
 .church-logo{width:55px;height:auto;display:block;flex-shrink:0;object-fit:contain}
 .brand{color:var(--brand)}
 .mission-map{margin:30px 0;min-width:0;background:var(--brand);color:white;border-radius:14px;padding:29px 24px 22px;position:relative;box-shadow:0 18px 45px #06377b14;border:1px solid #154887}
-.mission-map-heading{display:flex;align-items:center;justify-content:space-between;padding:0 5px;gap:15px}
+.mission-map-heading{display:flex;align-items:center;justify-content:center;text-align:center;padding:6px 5px 12px;gap:15px}
 .mission-map-heading>div>span{font-size:9px;letter-spacing:2.8px;font-weight:600;color:#a9c9ee}
-.mission-map-heading h2{font-size:23px;letter-spacing:-.045em;margin-top:9px;font-weight:600}
+.mission-map-heading h2{font-size:23px;letter-spacing:-.045em;margin-top:0;font-weight:600}
 .map-year{font:47px Georgia,serif;color:#93bce9;letter-spacing:-4px;padding-right:5px}
 .world-map{display:block;width:100%;height:auto;margin:13px 0 6px;overflow:visible}
 .map-graticule{stroke:#a7cbf0;stroke-opacity:.09;stroke-width:.8;fill:none}
