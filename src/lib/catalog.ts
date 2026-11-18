@@ -6,6 +6,6 @@ export function laToday(){return new Intl.DateTimeFormat("en-CA",{timeZone:"Amer
 export function registrationOpen(s:Settings){const d=laToday();return !!s.enabled&&(!s.opens_on||s.opens_on<=d)&&(!s.closes_on||s.closes_on>=d);}
 export function remaining(t:Team){return Math.max(0,t.capacity-t.leader_slots-t.reserved);}
 export function teamState(t:Team,s:Settings){if(s.closes_on&&laToday()>s.closes_on)return "접수 종료";if(!registrationOpen(s)||!t.enabled)return "모집 준비 중";if(!remaining(t)||t.waiting)return t.waitlist?"대기 접수":"정원 마감";return remaining(t)<=3?"마감 임박":"모집 중";}
-export function dateRange(t:Team){return t.start_date&&t.end_date?t.start_date.slice(5).replace("-",".")+" — "+t.end_date.slice(5).replace("-","."):"추후 공지";}
+export function dateRange(t:Team){return t.start_date&&t.end_date?t.start_date.slice(5).split("-").map(Number).join(".")+" ~ "+t.end_date.slice(5).split("-").map(Number).join("."):"추후 공지";}
 
 export function phoneLink(contact:string){const phone=contact.match(/(?:\+1[ .-]?)?\(?\d{3}\)?[ .-]?\d{3}[ .-]?\d{4}/);return phone?"tel:"+phone[0].replace(/[^+\d]/g,""):null;}
