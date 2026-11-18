@@ -22,7 +22,7 @@ export default function MissionMap() {
   return (
     <figure className="mission-map">
       <figcaption className="mission-map-heading">
-        <div><h2>{l("얼바인에서, 온누리로.","From Irvine, to the world.")}</h2></div>
+        <div><h2>{l("얼바인에서, 온누리로","From Irvine, to the world")}</h2></div>
       </figcaption>
       <svg className="world-map" viewBox="0 0 720 350" role="img" aria-labelledby="mission-map-title mission-map-description">
         <title id="mission-map-title">{l("얼바인과 여섯 선교지를 잇는 세계지도","A world map connecting Irvine and six destinations")}</title>
