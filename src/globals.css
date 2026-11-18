@@ -95,7 +95,7 @@ nav button{display:flex;align-items:center;gap:7px}
 .filters button span{font-size:10px;opacity:.75}
 .table-legend{font-size:10px;color:#73849d}
 .team-table{border-top:1px solid #b5becc}
-.table-head,.team-row{display:grid;grid-template-columns:1.5fr 1.2fr 1.2fr 1.1fr .65fr;gap:15px;align-items:center}
+.table-head,.team-row{display:grid;grid-template-columns:minmax(160px,1.4fr) minmax(115px,.95fr) minmax(150px,1.6fr) minmax(110px,1fr) minmax(100px,.9fr) 85px;gap:15px;align-items:center}
 .table-head{font-size:11px;color:#667892;padding:14px 8px;background:#ebeef3;border-bottom:1px solid var(--line)}
 .team-row{padding:24px 8px;border-bottom:1px solid var(--line);transition:background .2s}
 .team-row:hover{background:#eff2f6}
@@ -105,8 +105,8 @@ nav button{display:flex;align-items:center;gap:7px}
 .tone-2{background:#f0ebdd;border-color:#e6decc;color:#8a7957}
 .community{display:block;font-size:10px;letter-spacing:.8px;color:#59687f;margin-bottom:4px}
 .team-identity h3{font-size:18px}
-.team-date{display:flex;gap:7px;font-size:13px;color:#495669}
-.team-date svg{color:#8897ad}
+.team-date{display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:13px;color:#495669}
+.team-date svg{color:#8897ad;flex-shrink:0}
 .team-date small,.team-fee small{display:block;font-size:11px;margin-top:5px;color:#5b6b82}
 .team-fee{font-size:13px;font-weight:500}
 .team-fee small{font-weight:400}
@@ -250,7 +250,7 @@ input[type=checkbox]{width:15px;height:15px;margin:2px 0 0;accent-color:var(--br
 .hero-copy{padding:42px 0}
 .stats{gap:18px;grid-template-columns:1fr 1fr 1fr}
 .stat-note{display:none!important}
-.team-row,.table-head{grid-template-columns:1.4fr 1.15fr 1.2fr 1fr .6fr;gap:12px}
+.team-row,.table-head{grid-template-columns:1.2fr 1fr 1.4fr 1fr .9fr .7fr;gap:12px}
 .team-number{display:none}
 .team-date{font-size:11px}
 .team-fee{font-size:11px}
@@ -433,3 +433,9 @@ html[lang=en] .map-destinations small{font-size:9px}
 
 .map-destinations{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:15px}
 @media(max-width:640px){.header{height:auto;min-height:110px}.header-inner{min-height:110px}.map-destinations{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.team-ministry{font-size:12px;line-height:1.75;color:#495669;min-width:0;overflow-wrap:anywhere}
+.team-ministry p{margin:0;white-space:pre-line;word-break:keep-all}
+.mobile-ministry-label{display:none}
+@media(min-width:641px) and (max-width:1050px){.team-table{overflow-x:auto}.team-row,.table-head{min-width:900px;grid-template-columns:1.4fr .95fr 1.6fr 1fr .9fr 85px}}
+@media(max-width:640px){.team-ministry{grid-column:1/-1;grid-row:3/4;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px}.mobile-ministry-label{display:block;font-size:10px;color:#667892;margin-bottom:5px}.team-capacity,.team-action{grid-row:4/5}.team-date{align-self:center}}
